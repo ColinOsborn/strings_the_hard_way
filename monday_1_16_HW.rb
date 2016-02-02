@@ -1,6 +1,7 @@
 #Just Strings
 f = "First"
 l = "Last"
+space = " "
 
 #1.1 What code can you write to output the string "FirstLast"?
 puts f + l
@@ -8,16 +9,21 @@ puts f + l
 puts l + f
 #1.3 What code can you write to output the string "First Last"?
 puts l + " " + f
+puts f + " " + l
+puts f + space + l
+
 #1.4 What code can you write to output the string "Last First Last First"?
+puts "The text I want is #{l} #{f} #{l} #{f}"
 
 # Names
 name_1 = "Megan Smith"
 name_2 = "Todd Park"
 
 #2.1 Can you come up with two ways to output just the fragment "Megan" from name_1?
-puts name_1.split
+puts name_1.split.first
 puts name_1[0..4]
 #2.2 Would either of your techniques from A would work to output "Todd" from name_2? Why or why not?
+puts name_2.split.first.inspect
 
 #2.3 Write code that can output the initials of name_2.
 puts name_2.length
@@ -53,8 +59,10 @@ puts d.length
 5.times do
   puts "Happy Birthday"
 end
+#basic loop up here
 
-
+age = 5
+puts "#{('happy ' * age).capitalize}birthday!"
 
 
 #String Compression
@@ -65,3 +73,10 @@ puts d.length
 puts d[1..4].length
 puts d[0] + d[1..4].length.to_s + d[5]
 puts k[0] + k[1..7].length.to_s + k[8]
+
+string = "Denver"
+puts "#{string[0]}#{string.length - 2}#{string[-1]}"
+
+15.times do
+  puts "Hello"
+end
