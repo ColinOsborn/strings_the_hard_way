@@ -62,4 +62,4 @@ puts d.length
 puts d[1..4].length
 puts d[0] + d[1..4].length.to_s + d[5]
 
-do 
+def 
