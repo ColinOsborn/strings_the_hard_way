@@ -54,6 +54,9 @@ puts d.length
   puts "Happy Birthday"
 end
 
+
+
+
 #String Compression
 k = "Kalamazoo"
 d = "Denver"
@@ -61,5 +64,4 @@ puts k.length
 puts d.length
 puts d[1..4].length
 puts d[0] + d[1..4].length.to_s + d[5]
-
-def 
+puts k[0] + k[1..7].length.to_s + k[8]
